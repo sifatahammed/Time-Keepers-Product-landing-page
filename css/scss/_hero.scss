@@ -1,0 +1,118 @@
+.hero-section {
+  padding-top: 160px;
+  padding-bottom: 80px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(240, 249, 255, 1) 100%
+  );
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -10%;
+    right: -10%;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(
+      circle,
+      rgba(58, 134, 255, 0.1) 0%,
+      rgba(58, 134, 255, 0) 70%
+    );
+  }
+
+  h1 {
+    margin-bottom: 1.5rem;
+    font-size: 3rem;
+
+    @media (max-width: 768px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  .lead {
+    font-size: 1.25rem;
+    color: lighten($text-color, 15%);
+    margin-bottom: 2rem;
+  }
+
+  .hero-img {
+    transform: perspective(1000px) rotateY(-15deg);
+    transition: transform 0.5s ease;
+    filter: drop-shadow(5px 10px 20px rgba(0, 0, 0, 0.15));
+
+    &:hover {
+      transform: perspective(1000px) rotateY(0deg);
+    }
+  }
+
+  .hero-cta {
+    margin-top: 2.5rem;
+  }
+
+  .deal-countdown {
+    margin-top: 1.5rem;
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  #countdown {
+    display: flex;
+    gap: 15px;
+
+    .countdown-item {
+      background-color: white;
+      border-radius: 8px;
+      padding: 0.5rem 0.75rem;
+      text-align: center;
+      min-width: 70px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+
+      span {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: $primary-color;
+        display: block;
+        line-height: 1.2;
+      }
+
+      font-size: 0.8rem;
+      color: lighten($text-color, 20%);
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-section {
+    padding-top: 120px;
+    padding-bottom: 60px;
+    text-align: center;
+
+    .hero-img {
+      margin-top: 40px;
+      transform: none;
+
+      &:hover {
+        transform: none;
+      }
+    }
+
+    #countdown {
+      justify-content: center;
+
+      .countdown-item {
+        min-width: 60px;
+
+        span {
+          font-size: 1.25rem;
+        }
+      }
+    }
+  }
+}

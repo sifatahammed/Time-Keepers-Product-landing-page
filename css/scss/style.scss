@@ -1,0 +1,17 @@
+// Variables
+$primary-color: #3a86ff;
+$secondary-color: #ff006e;
+$text-color: #333333;
+$light-gray: #f8f9fa;
+$dark-gray: #343a40;
+$body-bg: #ffffff;
+$footer-bg: #272727;
+
+
+// Components
+@import "navigation";
+@import "hero";
+@import "showcase-product";
+@import "testimonials";
+@import "contact-faq-footer";
+@import "animations";

@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premium Headphones - Experience Sound Like Never Before</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Time Keepers</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products">Products</a>
+            </li>
+          
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h1 class="display-4 fw-bold">
+              Experience Timeless Elegance
+            </h1>
+            <p class="lead">
+              Our timepieces embody durability, innovation, and timeless style.
+            </p>
+            <div class="hero-cta">
+              <a href="#products" class="btn btn-primary btn-lg">Shop Now</a>
+              <div class="mt-3 deal-countdown">
+                <p>
+                  Limited Time Offer:
+                  <span class="fw-bold text-danger">20% OFF</span>
+                </p>
+                <div id="countdown" class="d-flex">
+                  <div class="countdown-item">
+                    <span id="days">00</span>Days
+                  </div>
+                  <div class="countdown-item">
+                    <span id="hours">00</span>Hrs
+                  </div>
+                  <div class="countdown-item">
+                    <span id="minutes">00</span>Mins
+                  </div>
+                  <div class="countdown-item">
+                    <span id="seconds">00</span>Secs
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="/images/12.jpg"
+              alt="Premium Watches"
+              class="img-fluid hero-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <section id="products" class="product-showcase">
+      <div class="container">
+        <h2 class="text-center mb-5">Featured Products</h2>
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <div class="product-main">
+              <h3>Seamaster Diver 300M</h3>
+              <div class="product-gallery">
+                <div class="main-image-container">
+                  <img
+                    id="main-product-image"
+                    src="/images/4.avif"
+                    alt="Seamaster Diver 300M"
+                    class="img-fluid"
+                  />
+                  <div class="image-zoom-lens" id="lens"></div>
+                </div>
+                <div class="zoom-result" id="zoom-result"></div>
+                <div class="thumbnail-gallery">
+                  <img
+                    src="/images/4.avif"
+                    alt="Product View 1"
+                    class="img-thumbnail product-thumbnail active"
+                  />
+                  <img
+                    src="/images/5.avif"
+                    alt="Product View 2"
+                    class="img-thumbnail product-thumbnail"
+                  />
+                  <img
+                    src="/images/6.avif"
+                    alt="Product View 3"
+                    class="img-thumbnail product-thumbnail"
+                  />
+                  <img
+                    src="/images/7.avif"
+                    alt="Product View 4"
+                    class="img-thumbnail product-thumbnail"
+                  />
+                </div>
+              </div>
+              <div class="product-info">
+                <div class="product-rating">
+                  <span class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </span>
+                  <span class="rating-count">(128 reviews)</span>
+                </div>
+                <p class="product-description">
+                  Inside this timepiece are the revolutionary components that guarantee the highest standards of performance. 
+                  From the Co-Axial escapement for long-lasting precision, to the silicon balance spring for superior anti-magnetism, 
+                  OMEGA has conquered every challenge that matters.
+                </p>
+                <div class="product-price">
+                  <span class="old-price">$13099.99</span>
+                  <span class="current-price">$13019.99</span>
+                </div>
+                <div class="product-variants">
+                  <div class="variant-group">
+                    <label>Color:</label>
+                    <div class="color-options">
+                      <button
+                        class="color-option active"
+                        data-color="black"
+                        style="background-color: #000"
+                        aria-label="Black color option"
+                      ></button>
+                      <button
+                        class="color-option"
+                        data-color="white"
+                        style="background-color: #fff; border: 1px solid #ddd"
+                        aria-label="White color option"
+                      ></button>
+                      <button
+                        class="color-option"
+                        data-color="blue"
+                        style="background-color: #0066cc"
+                        aria-label="Blue color option"
+                      ></button>
+                      <button
+                        class="color-option"
+                        data-color="red"
+                        style="background-color: #cc0000"
+                        aria-label="Red color option"
+                      ></button>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="btn btn-primary btn-lg w-100 add-to-cart"
+                  data-product-id="1"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="related-products mt-5">
+          <h3 class="text-center mb-4">You May Also Like</h3>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card product-card">
+                <img
+                  src="/images/2.jpg"
+                  class="card-img-top"
+                  alt="Yacht-Master"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Yacht-Master</h5>
+                  <div class="product-rating small">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span>(85)</span>
+                  </div>
+                  <p class="card-text">
+                    A classic dress watch for the discerning gentleman.
+                  </p>
+                  <p class="product-price">$14999.99</p>
+                  <button
+                    class="btn btn-outline-primary w-100 add-to-cart"
+                    data-product-id="2"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card product-card">
+                <img
+                  src="\images\8.webp"
+                  class="card-img-top"
+                  alt="Datejust Pearlmaster"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Datejust Pearlmaster</h5>
+                  <div class="product-rating small">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>(116)</span>
+                  </div>
+                  <p class="card-text">
+                    Sweat-resistant casual watch designed for athletes and fitness
+                    enthusiasts.
+                  </p>
+                  <p class="product-price">$12999.99</p>
+                  <button
+                    class="btn btn-outline-primary w-100 add-to-cart"
+                    data-product-id="3"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card product-card">
+                <img
+                  src="\images\11.webp"
+                  class="card-img-top"
+                  alt="Sea-Dweller Deepsea"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Sea-Dweller Deepsea</h5>
+                  <div class="product-rating small">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span>(94)</span>
+                  </div>
+                  <p class="card-text">
+                    A classic dress watch for the discerning gentleman.
+                  </p>
+                  <p class="product-price">$24999.99</p>
+                  <button
+                    class="btn btn-outline-primary w-100 add-to-cart"
+                    data-product-id="4"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="reviews" class="testimonials">
+      <div class="container">
+        <h2 class="text-center mb-5">What Our Customers Say</h2>
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div
+              id="testimonialCarousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="testimonial-item">
+                    <div class="testimonial-content">
+                      <div class="stars mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p>
+                        "I purchased the Breitling Chronomat and couldn’t be more impressed. The design, weight, and feel are pure luxury. TimeKeepers made the buying process smooth and professional. Highly recommend for anyone looking for authentic high-end watches."
+                      </p>
+                      <div class="testimonial-user">
+                        <img
+                          src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50' preserveAspectRatio='none'%3E%3Ccircle cx='25' cy='25' r='20' fill='%23f8f9fa'/%3E%3Ctext x='25' y='30' font-family='Arial' font-size='12' text-anchor='middle' fill='%233a86ff'%3ES%3C/text%3E%3C/svg%3E"
+                          alt="Seth M."
+                          class="rounded-circle"
+                        />
+                        <div>
+                          <h5>Seth M.</h5>
+                          <p class="text-muted">Verified Buyer</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="testimonial-item">
+                    <div class="testimonial-content">
+                      <div class="stars mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p>
+                        "My Omega Seamaster arrived within 3 days, beautifully packaged and exactly as described. The website is clean and easy to navigate, and the customer support was incredibly responsive. I’ll definitely shop here again!"
+                      </p>
+                      <div class="testimonial-user">
+                        <img
+                          src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50' preserveAspectRatio='none'%3E%3Ccircle cx='25' cy='25' r='20' fill='%23f0f0f0'/%3E%3Ctext x='25' y='30' font-family='Arial' font-size='12' text-anchor='middle' fill='%233a86ff'%3EM%3C/text%3E%3C/svg%3E"
+                          alt="Michell O."
+                          class="rounded-circle"
+                        />
+                        <div>
+                          <h5>Michell O.</h5>
+                          <p class="text-muted">Verified Buyer</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="testimonial-item">
+                    <div class="testimonial-content">
+                      <div class="stars mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                      <p>
+                        "As a collector, I’m very particular about quality. TimeKeepers exceeded expectations—from the detailed product images to the secure checkout. My Rolex Datejust was verified and flawless. Trustworthy and truly premium service."
+                      </p>
+                      <div class="testimonial-user">
+                        <img
+                          src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50' preserveAspectRatio='none'%3E%3Ccircle cx='25' cy='25' r='20' fill='%23e8e8e8'/%3E%3Ctext x='25' y='30' font-family='Arial' font-size='12' text-anchor='middle' fill='%233a86ff'%3EJ%3C/text%3E%3C/svg%3E"
+                          alt="Jenny K."
+                          class="rounded-circle"
+                        />
+                        <div>
+                          <h5>Jenny K.</h5>
+                          <p class="text-muted">Verified Buyer</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#testimonialCarousel"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#testimonialCarousel"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+      <div class="container">
+        <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="accordion" id="faqAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Why Bronze was used?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Bronze Gold was specifically developed to produce a pleasing aesthetic and hue, 
+                    while also offering a bronze alloy that could be worn with direct contact on the skin, 
+                    thanks to its distinctive composition. This one-of-a-kind alloy is enriched with noble elements such as 37.5% gold, 
+                    hallmarked as 9K, as well as palladium and silver, to create a unique colour which sits exactly between the brand’s 
+                    18K MoonshineTM gold and 18K SednaTM gold. As well as featuring a soft pink hue, during wear it offers incomparable corrosion resistance without verdigris-oxidation, 
+                    and will therefore age slowly and retain its natural and beautiful patina over a longer period of time. For fans of bronze watches and innovative materials, this is great news!
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Are Seamaster Diver 300M water-resistant?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    To ensure the integrity of our timepieces at depth, not just some but all watches are fully immersed in water and pressure 
+                    is applied up to the point of the guaranteed water resistance. 
+                    By submerging each watch in water we have chosen – yet again - to exceed normal testing standards.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Do i need to service it every month?
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Expect fewer visits to the service centre. The Co-Axial escapement is designed to reduce friction inside the movement. 
+                    As a result, less lubrication is needed and hence less servicing. 
+                    Compared to non-Co-Axial watches, the intervals between getting your watch serviced will be much longer.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    Is it Anti-Magnetic?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFour"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                   Everyday items such as mobile phones, metal clasps on handbags, laptops, MRI, induction hobs or automatic doors; subject a watch to magnetic fields and can affect its performance. 
+                   To prevent the risk of permanent deviations of up to several minutes a day we've conceived movements with antimagnetic materials, such as the silicon balance spring, capable of withstanding the highest fields.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                  >
+                  5-Year Warranty
+                  </button>
+                </h2>
+                <div
+                  id="collapseFive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFive"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    In our quest to raise industry standards and push the boundaries of quality, all OMEGA watches are offered with a full 5-year warranty. 
+                    This customer promise shows the confidence we have in the excellence of our timepieces, and provides extra trust and assurance when choosing your watch.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter & Contact -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="newsletter-box">
+              <h3>Subscribe for Updates</h3>
+              <p>
+                Join our newsletter to receive exclusive offers, new product
+                announcements, and tips to get the most out of your Time Pieces.
+              </p>
+              <form id="newsletter-form" class="newsletter-form">
+                <div class="input-group mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Your email address"
+                    required
+                  />
+                  <button class="btn btn-primary" type="submit">
+                    Subscribe
+                  </button>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="acceptTerms"
+                    required
+                  />
+                  <label class="form-check-label" for="acceptTerms">
+                    I agree to receive promotional emails
+                  </label>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="contact-box">
+              <h3>Contact Us</h3>
+              <p>
+                Have questions or need support? Send us a message and we'll get
+                back to you shortly.
+              </p>
+              <form id="contact-form" class="contact-form">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Your Email"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <select
+                    class="form-select"
+                    aria-label="Select topic for your message"
+                  >
+                    <option selected>Select Topic</option>
+                    <option value="support">Product Support</option>
+                    <option value="order">Order Inquiry</option>
+                    <option value="return">Returns & Refunds</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    rows="4"
+                    placeholder="Your Message"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Time Keepers</h5>
+            <p>
+              Our timepieces embody durability, innovation, and timeless style.
+            </p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="YouTube"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <h5>Catalouge</h5>
+            <ul class="footer-links">
+              <li><a href="#">Men's Catalouge</a></li>
+              <li><a href="#">Wen's Catalouge</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h5>Brands</h5>
+            <ul class="footer-links">
+              <li><a href="#">Rolex</a></li>
+              <li><a href="#">Omega</a></li>
+              <li><a href="#">Tag Heger</a></li>
+              <li><a href="#">Seiko</a></li>
+              <li><a href="#">Cartier</a></li>
+              <li><a href="#">Breitling</a></li>
+              <li><a href="#">Hublot</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h5>Company</h5>
+            <ul class="footer-links">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h5>Contact</h5>
+            <ul class="footer-links">
+              <li>
+                <a href="mailto:support@TimeKeeepers.com">support@Time-Keepers.com</a>
+              </li>
+              <li><a href="tel:1-800-555-0123">1-800-555-0123</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-12 text-center">
+            <p class="copyright">© 2025 Time Keepers. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="notification" id="notification">
+      <div class="notification-content">
+        <i class="fas fa-check-circle"></i>
+        <span id="notification-message">Product added to cart!</span>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
