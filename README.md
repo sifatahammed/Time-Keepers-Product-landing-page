@@ -29,13 +29,13 @@ A modern, responsive product landing page built with HTML, CSS, Bootstrap, SASS,
 └── README.md
 ```
 
-1️⃣ **Clone the repository:**
+**Clone the repository:**
 
 ```bash
 git clone <repository-url>
 ```
 
-5️⃣ **Run the project:** Open `index.html` in a browser or use a local server using the VS Code.
+**Run the project:** Open `index.html` in a browser or use a local server using the VS Code.
 
 
 ## 🎨 **UI/UX Design**
@@ -85,12 +85,19 @@ git clone <repository-url>
 ### 🚀 **JavaScript Functionality**
 
 ✨ `initCountdown()` – Live countdown for offers
+
 ✨ `initLiveChat()` – Simulated chat support
+
 ✨ `initImageZoom()` – Product magnification
+
 ✨ `initThumbnailGallery()` – Image thumbnail navigation
+
 ✨ `initFormSubmissions()` – Form validation & handling
+
 ✨ `initAnimations()` – Scroll-based transitions
+
 ✨ `initColorOptions()` – Color variant selection
+
 ✨ `initAddToCart()` – Shopping cart interactions
 
 ## ⚡ **Future Enhancements**
