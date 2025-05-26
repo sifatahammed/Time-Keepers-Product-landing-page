@@ -48,17 +48,17 @@ git clone <repository-url>
 
 ## 🛠️ **Technologies Used**
 
-- ⚡ **HTML5** 
-- 🎨 **CSS3** 
-- 💎 **SASS/SCSS** 
-- 📱 **Bootstrap 5** 
-- 🎭 **JavaScript (ES6+)** 
-- 🔤 **Font Awesome**
+-  **HTML5** 
+-  **CSS3** 
+-  **SASS/SCSS** 
+-  **Bootstrap 5** 
+-  **JavaScript** 
+-  **Font Awesome**
 
 ## ✨ **Features**
 - 🏆 **Hero Section** – Engaging banner with CTA
 - ⏳ **Countdown Timer** – Limited-time offers
-- - 🎥 **Product Showcase** – Interactive gallery with zoom
+- 🎥 **Product Showcase** – Interactive gallery with zoom
 - 🎨 **Product Variants** – Color selection options
 - 🛒 **Add to Cart** – Shopping cart animations
 - ❓ **FAQ Section** – Accordion-style questions
@@ -82,7 +82,7 @@ git clone <repository-url>
 ✔️ **Responsive media queries**
 ✔️ **Smooth animation keyframes**
 
-### ⚡ **JavaScript Functionality**
+### 🚀 **JavaScript Functionality**
 
 ✨ `initCountdown()` – Live countdown for offers
 ✨ `initLiveChat()` – Simulated chat support
@@ -93,7 +93,7 @@ git clone <repository-url>
 ✨ `initColorOptions()` – Color variant selection
 ✨ `initAddToCart()` – Shopping cart interactions
 
-## 🚀 **Future Enhancements**
+## ⚡ **Future Enhancements**
 
 -  **Payment Gateway Integration** – Secure checkout
 -  **Backend Integration** – API or headless CMS support
@@ -105,11 +105,9 @@ git clone <repository-url>
 
 ## **License**
 
-📄 **MIT License** – Open-source and free to use! 🎉
+ **MIT License** – Open-source and free to use! 🎉
 
-### Created with ❤️ by -->Sifat Ahammed Akash 
+### Created with ❤️ by --> Sifat Ahammed Akash 
 
+[**Contact Me**](mailto:sifatahammed821@gmail.com)
 
-📧 [**Contact Me**](mailto:sifatahammed821@gmail.com)
-
-</div>
